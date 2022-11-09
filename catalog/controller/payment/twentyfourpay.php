@@ -55,10 +55,10 @@ class Twentyfourpay extends \Opencart\System\Engine\Controller {
     $data['NURL'] = $formData['settings']['nurl'];
     $data['RURL'] = $formData['settings']['rurl'];
 
-    if ($this->config->get('payment_twentyfourpay_notify_client'))
-      $data['clientNotify'] = true;
-      $data['NotifyClient'] = $formData['customer']['email'];
-
+    if ($this->config->get('payment_twentyfourpay_notify_client')){
+        $data['clientNotify'] = true;
+        $data['NotifyClient'] = $formData['customer']['email'];
+    }
     return $this->load->view('extension/twentyfourpay/payment/twentyfourpay', $data);
   }
 
