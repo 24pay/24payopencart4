@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="twentyfourpay.ocmod">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/twentyfourpay.ocmod.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
