@@ -34,6 +34,12 @@ $_['receive_email']         = 'áno chcem na nižšie uvedený email';
 $_['notify_client']         = 'Chcete posielat klientovi notifikačný email o stave platby z 24-pay';
 $_['notify_client_on']      = 'áno chcem';
 
+$_['direct_google_pay']     = 'Zobraziť priamo Platbu cez Google Pay';
+$_['direct_google_pay_on']  = 'Ano';
+
+$_['direct_apple_pay']      = 'Zobraziť priamo Platbu cez Apple Pay';
+$_['direct_apple_pay_on']   = 'Ano';
+
 // Error
 $_['error_permission']      = 'Warning: You do not have permission to modify the payment module!';
 $_['error_mid'] = 'Parameter MID je povinný!';

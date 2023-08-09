@@ -36,6 +36,12 @@ $_['receive_email']         = 'Receive';
 $_['notify_client']         = 'Send payment status email to client';
 $_['notify_client_on']      = 'Send';
 
+$_['direct_google_pay']     = 'Show direct Google Pay payment option';
+$_['direct_google_pay_on']  = 'Show';
+
+$_['direct_apple_pay']      = 'Show direct Apple Pay payment option';
+$_['direct_apple_pay_on']   = 'Show';
+
 // Error
 $_['error_permission']      = 'Warning: You do not have permission to modify the payment module!';
 $_['error_mid']             = 'Merchant Identificator (MID) is required!';

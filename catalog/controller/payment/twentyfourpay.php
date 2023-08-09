@@ -59,6 +59,17 @@ class Twentyfourpay extends \Opencart\System\Engine\Controller {
         $data['clientNotify'] = true;
         $data['NotifyClient'] = $formData['customer']['email'];
     }
+
+    $data['directApplePay'] = false;
+    if ($this->config->get('payment_twentyfourpay_direct_apple_pay')){
+        $data['directApplePay'] = true;
+    }
+
+    $data['directGooglePay'] = false;
+    if ($this->config->get('payment_twentyfourpay_direct_google_pay')){
+        $data['directGooglePay'] = true;
+    }
+
     return $this->load->view('extension/twentyfourpay/payment/twentyfourpay', $data);
   }
 

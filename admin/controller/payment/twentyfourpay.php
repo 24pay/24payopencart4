@@ -188,6 +188,18 @@ public function index() : void  {
 			$data['payment_twentyfourpay_notify_client'] = $this->config->get('payment_twentyfourpay_notify_client');
 		}
 
+    if (isset($this->request->post['payment_twentyfourpay_direct_apple_pay'])) {
+        $data['payment_twentyfourpay_direct_apple_pay'] = $this->request->post['payment_twentyfourpay_direct_apple_pay'];
+    } else {
+        $data['payment_twentyfourpay_direct_apple_pay'] = $this->config->get('payment_twentyfourpay_direct_apple_pay');
+    }
+
+    if (isset($this->request->post['payment_twentyfourpay_direct_google_pay'])) {
+        $data['payment_twentyfourpay_direct_google_pay'] = $this->request->post['payment_twentyfourpay_direct_google_pay'];
+    } else {
+        $data['payment_twentyfourpay_direct_google_pay'] = $this->config->get('payment_twentyfourpay_direct_google_pay');
+    }
+
     if (isset($this->request->post['payment_twentyfourpay_notify'])) {
       $data['payment_twentyfourpay_notify'] = $this->request->post['payment_twentyfourpay_notify'];
     } else {
